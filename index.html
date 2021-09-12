@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body id="main" style="transition: .3s;">
+<div class="container" id="container">
+        <div id="display"><input id="input" type="tel text"></div>
+    <div id="btncont">
+        <input onclick="dis('7')" id="btn" value="7" type="button">
+
+        <input onclick="dis('8')" id="btn" value="8" type="button">
+
+        <input onclick="dis('9')" id="btn" value="9" type="button">
+
+        <input onclick="dis('+')" id="btn" value="+" type="button">
+
+        <input onclick="dis('4')" id="btn" value="4" type="button">
+
+        <input onclick="dis('5')" id="btn" value="5" type="button">
+
+        <input onclick="dis('6')" id="btn" value="6" type="button">
+
+        <input onclick="dis('-')" id="btn" value="-" type="button">
+
+        <input onclick="dis('1')" id="btn" value="1" type="button">
+
+        <input onclick="dis('2')" id="btn" value="2" type="button">
+        <input onclick="dis('3')" id="btn" value="3" type="button">
+        <input onclick="dis('*')" id="btn" value="×" type="button">
+        <input onclick="solve()" id="btn" value="=" type="button">
+        <input onclick="dis('0')" id="btn" value="0" type="button">
+        <input style="font-size: 19px;" onclick="q14()" id="btn" value="Theam" type="button">
+        <input style="font-size: 16px;" onclick="clr()" id="btn" value="clr" type="button">
+    </div>
+
+    <div id="theam">
+        <div onclick="qw()" style="background-color: rgb(143, 121, 224);" id="a"></div>
+        <div onclick="we()" style="background-color: rgb(93, 133, 219);" id="b"></div>
+        <div onclick="er()" style="background-color: rgb(72, 201, 104);" id="c"></div>
+        <div onclick="rt()" style="background-color: rgb(255, 0, 234);" id="d"></div>
+        <div onclick="ty()" style="background-color: rgb(199, 187, 81);" id="e"></div>
+        <div onclick="yu()" style="background-color: rgb(0, 255, 221);" id="f"></div>
+    </div>
+
+    <script>
+        //function that display value
+        function dis(val)
+         {
+             document.getElementById("input").value+=val
+         }
+           
+         //function that evaluates the digit and return result
+         function solve()
+         {
+             let x = document.getElementById("input").value
+             let y = eval(x)
+             document.getElementById("input").value = y
+         }
+           
+         //function that clear the display
+         function clr()
+         {
+             document.getElementById("input").value = ""
+         }
+      
+       var x=document.getElementById('main')
+       var y=document.getElementById('theam')
+       function q14() {
+           y.style.display = 'grid'
+           
+       }
+
+
+    function qw(){x.style.backgroundColor = 'rgb(143, 121, 224)'; y.style.display = 'none'}
+    function ty(){x.style.backgroundColor = 'rgb(199, 187, 81)'; y.style.display = 'none'}
+    function we(){x.style.backgroundColor = 'rgb(93, 133, 219)'; y.style.display = 'none'}
+    function er(){x.style.backgroundColor = 'rgb(72, 201, 104)'; y.style.display = 'none'}
+    function rt(){x.style.backgroundColor = 'rgb(255, 0, 234)';y.style.display = 'none'}
+    function yu(){x.style.backgroundColor = 'rgb(0, 255, 221)'; y.style.display = 'none'}
+       
+       
+    </script>
+
+</div>
+</body>
+</html>
