@@ -103,12 +103,12 @@
         height: 500px;
         background-color: rgb(75, 82, 82);
         opacity: 70%;
-        transform: translateY(30px);
+        transform: translateY(20px);
         border-radius: 5px;
     }
     #btncont{
     transform: translateY(70px);
-    height: 250px;
+    height: 300px;
     display: grid;
     padding: 5px;
     grid-template-columns: auto auto auto auto;
