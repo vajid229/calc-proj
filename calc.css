@@ -103,7 +103,7 @@
         height: 500px;
         background-color: rgb(75, 82, 82);
         opacity: 70%;
-        transform: translateY(20px);
+        transform: translateY(30px);
         border-radius: 5px;
     }
     #btncont{
