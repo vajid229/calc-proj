@@ -1,0 +1,145 @@
+
+#container{
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(75, 82, 82);
+    margin-top: 100px;
+    margin-bottom: 50px;
+    opacity: 80%;
+    border-radius: 5px;
+}
+
+#btncont{
+    transform: translateY(60px);
+    height: 250px;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: auto auto 70px auto;
+    grid-gap: 5px;
+    vertical-align: bottom;
+}
+#display{
+    background-color: rgb(216, 203, 203);
+    height: 70px;
+    transform: translateY(50px);
+    margin: 10px;
+    
+}
+
+#btn{
+    background-color: rgb(149, 149, 158);
+    text-align: center;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 10%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#btn:hover{
+    border:1px solid white;
+    
+}
+
+#input:focus{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid rgb(223, 212, 212);
+    border-radius: 1px;
+    box-sizing: border-box;
+    outline: none;
+    direction: rtl;
+    font-size: 24px;
+}
+
+#input{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid rgb(240, 230, 230);
+    border-radius: 1px;
+    box-sizing: border-box;
+    outline: none;
+    direction: rtl;
+    font-size: 24px;
+}
+#theam{
+    width: 340px;
+    height: 300px;
+    background-color: rgb(212, 213, 214);
+    position:absolute;
+    transform: translateY(-300px);
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 5px;
+    border-radius: 5px;
+    display:none;
+}
+
+#theam > div{
+    height: auto;
+    width:auto;
+    background-color: #ccc;
+    margin: 6px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 450px) {
+    body {
+      background-color: rgb(143, 121, 224);
+    }
+    #container{
+        margin: 0;
+        width: auto;
+        height: 500px;
+        background-color: rgb(75, 82, 82);
+        opacity: 70%;
+        transform: translateY(20px);
+        border-radius: 5px;
+    }
+    #btncont{
+    transform: translateY(70px);
+    height: 250px;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+    vertical-align: bottom;
+}
+#display{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    transform: translateY(50px);
+    margin: 5px;
+    opacity: 80%;
+    
+}
+#btn{
+    height: 65px;
+    width: 80px;
+    background-color: rgb(149, 149, 158);
+    text-align: center;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 25px;
+    border: 1px solid black;
+}
+#btn:hover{
+    border:1px solid rgb(107, 115, 221);
+    border-radius: 10%;
+}
+#btn14{
+    grid-area: 4/4/4/2;
+}
+
+}
